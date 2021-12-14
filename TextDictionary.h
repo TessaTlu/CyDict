@@ -7,27 +7,29 @@
 
 #include <vector>
 #include <string>
+#include <map>
 #include <set>
-
-struct Word {
-    std::string text;
-    int count;
-};
 
 class TextDictionary {
 public:
     std::string text_path;
     std::set<char> delimits;
-    std::vector<Word*> words;
+    std::map<std::string, int> words;
+
     std::vector<std::string> word_parse(const std::string &row) const;
+
     TextDictionary();
-    void sort();
+
     void word_input();
+
     void word_add(std::string word);
-    void count_increase(Word* word);
+
+    void count_increase(std::string &word);
+
     void print();
+
     void scan_txt();
-    Word* find(const std::string& word);
+
     void input_find();
 };
 

@@ -11,6 +11,8 @@ Application.h
 /Users/rasimgadziev/Desktop/study/cprj/CyDict/Application.h
 iostream
 -
+utility
+-
 
 /Users/rasimgadziev/Desktop/study/cprj/CyDict/Application.h
 TextDictionary.h
@@ -25,11 +27,7 @@ cctype
 -
 algorithm
 -
-string
--
 fstream
--
-cstdlib
 -
 utility
 -
@@ -41,12 +39,8 @@ vector
 -
 string
 -
+map
+-
 set
 -
-
-/Users/rasimgadziev/Desktop/study/cprj/CyDict/main.cpp
-TextDictionary.h
-/Users/rasimgadziev/Desktop/study/cprj/CyDict/TextDictionary.h
-Application.h
-/Users/rasimgadziev/Desktop/study/cprj/CyDict/Application.h
 

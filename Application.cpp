@@ -4,14 +4,14 @@
 
 #include "Application.h"
 #include <iostream>
+#include <utility>
 
 Application::Application(TextDictionary dictionary) {
-    this->dictionary = dictionary;
+    this->dictionary = std::move(dictionary);
     this->state = 0;
     this->actions = {"Print dictionary",
                      "Add a new word",
                      "Find a word",
-                     "Sort a dictionary",
                      "Read words from file"};
 }
 
@@ -43,9 +43,6 @@ void Application::select_action(int action) {
             dictionary.input_find();
             menu();
         case 4:
-            dictionary.sort();
-            menu();
-        case 5:
             dictionary.scan_txt();
             menu();
         default:
